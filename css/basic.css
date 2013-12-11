@@ -25,45 +25,62 @@ time, mark, audio, video {
   	vertical-align: baseline;
   }
 #container{
-    max-width: 900px;
+    width: 720px;
+    margin: auto; 
+    border: 1px solid green;
+    overflow: auto;
+   
+
 }
 #content{
-	overflow: auto;
-    max-width: 700px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-color: #EADADA; /*ljusljus latte*/
+	
+    width: 670px;
+    margin-bottom: 10px;
+    background-color: #EADADA;ljusljus latte*/
+ 	margin-left: 10px;
+ 	overflow: auto;   
 }
 #maincontent{
 	width:370px ;
 	float:left;
 	font-size: 12px;
+	line-height: 16px;
 	font-family: Verdana, sans-serif;
 	 background-color: #EADADA; /*ljusljus latte*/
 	 color: #5C4D4D;
 	 padding: 10px;
+	
 }
 #maincontent h1{
 		font-family: Times New Roman, serif;
 		font-size: 36px;
+		line-height: 44px;
 	}
+#maincontent img{
+	float: left;
+	margin-right:  10px;
+}
 #subcontent{
 	width:200px;
 	float:left;
 	font-family: Verdana, sans-serif;
 	font-size: 10px;
+	line-height: 14px;
 	 background-color: #EADADA; /*ljusljus latte*/
 	 border-left: 1px dotted  #5C4D4D;
 	 color: #5C4D4D;
 	 padding: 10px;
-}
+	}
+
 #subcontent h1{
 	font-family: Times New Roman, serif;
 	font-size: 16px;
+	line-height: 40px;
 }
 #subcontent h2{
 	font-family: Times New Roman, serif;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 24px;
 }
 #subcontent a{
 	color: #5C4D4D;
@@ -73,34 +90,31 @@ time, mark, audio, video {
 	list-style: none;
 }
 #topbar{
-    max-width: 590px;
+    width: 670px; height: 300px;
   	float:left;
-    background color:#491212;
-    color: #FFF;
+  	text-align: right;
+  	background-color: red;
+  	color: #FFF;
+    font-size: 10px;
     background-image: url("css/pics/coffey.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: top; 
-			overflow: auto;
-			margin: 0 auto;
+    /*background-position: top-left;
+	background-repeat: no-repeat;*/
 }
+
 #menu a{
 		visibility: hidden;
 	}
 
 #menu ul {
-		margin-top : 10px;	
-	}
-	#menu a #maincontent{
-		visibility: hidden;
-
+		margin-top : 10px;
 	}
 	#menu li {
-		display: inline;
 		list-style: none;
+		display: inline;
+		float:left;
+		margin-bottom: 9px;
 	}
 	#menu li a {
-		margin-left: 0px;
 		/*line-height: 40px;*/
 		text-align: center;
 		background-color: #5C4D4D;
@@ -109,8 +123,9 @@ time, mark, audio, video {
 		border-left: 1px solid #491212;
 		padding: 10px;
 		visibility: visible;
+
 	}
-	#menu li a.active{
+	li a .active{
 		background-color: #EADADA; /*ljusljus latte*/
 		color: #5C4D4D;
 	}
