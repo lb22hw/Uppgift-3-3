@@ -25,23 +25,26 @@ time, mark, audio, video {
   	vertical-align: baseline;
   }
 #container{
-    width: 720px;
+    max-width: 900px;
     margin: auto; 
-    border: 1px solid green;
     overflow: auto;
    
 
 }
 #content{
 	
-    width: 670px;
+    width: 600px;
     margin-bottom: 10px;
     background-color: #EADADA;ljusljus latte*/
  	margin-left: 10px;
- 	overflow: auto;   
+ 	overflow: auto;
+ 	border-left: 1px solid  #5C4D4D; 
+ 	border-right: 1px solid  #5C4D4D; 
+ 	border-bottom: 1px solid  #5C4D4D; 
+ 	clear: left;
 }
 #maincontent{
-	width:370px ;
+	width:320px ;
 	float:left;
 	font-size: 12px;
 	line-height: 16px;
@@ -61,7 +64,7 @@ time, mark, audio, video {
 	margin-right:  10px;
 }
 #subcontent{
-	width:200px;
+	width:220px;
 	float:left;
 	font-family: Verdana, sans-serif;
 	font-size: 10px;
@@ -90,32 +93,44 @@ time, mark, audio, video {
 	list-style: none;
 }
 #topbar{
-    width: 670px; height: 300px;
+    width: 600px; height: 250px;
   	float:left;
   	text-align: right;
-  	background-color: red;
   	color: #FFF;
     font-size: 10px;
-    background-image: url("css/pics/coffey.jpg");
-    /*background-position: top-left;
-	background-repeat: no-repeat;*/
+    background-image: url("pics/coffey.jpg");
+    background-position: 0,-20px,0,0;
+    margin-top: 20px;
+    padding-top: 2px; 
+	background-repeat: no-repeat;
+ 	background-color: #1A0000;
+ 	border-left: 1px solid  #5C4D4D; 
+ 	border-right: 1px solid  #5C4D4D; 
+ 	border-top: 1px solid  #5C4D4D; 
 }
 
 #menu a{
 		visibility: hidden;
 	}
 
+
 #menu ul {
-		margin-top : 10px;
+		width: 600px;
+		/*height: 40px;*/
+		float:left;
+		background-color: #1A0000; 
+		border-left: 1px solid  #5C4D4D; 
+ 		border-right: 1px solid  #5C4D4D; 
+ 		padding-bottom: 9px; 
+
 	}
 	#menu li {
 		list-style: none;
 		display: inline;
-		float:left;
-		margin-bottom: 9px;
-	}
+		margin-top: 10px;
+}
+	
 	#menu li a {
-		/*line-height: 40px;*/
 		text-align: center;
 		background-color: #5C4D4D;
 		color:#FFF; 
@@ -123,17 +138,20 @@ time, mark, audio, video {
 		border-left: 1px solid #491212;
 		padding: 10px;
 		visibility: visible;
-
-	}
-	li a .active{
-		background-color: #EADADA; /*ljusljus latte*/
-		color: #5C4D4D;
+		margin-left: -5px;
 	}
 	#menu li a:hover{
 	  background-color:#8B7979;
 	}
+	#menu .active a{
+		background-color: #EADADA; /*ljusljus latte*/
+		color: #5C4D4D;
+		margin-left: 10px;
+	}
+	
+	
 	#bottomcontent{
-		width:590px;
+		width:580px;
 		font-family: Verdana, sans-serif;
 		font-size: 10px;
 		font-style: italic;
